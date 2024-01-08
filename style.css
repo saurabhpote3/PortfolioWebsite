@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+:root {
+  --primary: #103783;
+  --secondary: #9bafd9;
+  --third: #696eff;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 300px;
+  height: 80px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  margin: 20px;
+  font-weight: 500;
+  color: black;
+}
+.navbar ul li a:hover {
+  color: var(--third);
+}
+.nav-btn button {
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 30px;
+  border-style: none;
+  color: white;
+  font-weight: 500;
+  background: linear-gradient(
+    90deg,
+    rgba(16, 55, 131, 1) 0%,
+    rgba(155, 175, 217, 1) 100%
+  );
+}
+/* about section  */
+.about-section {
+  padding: 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-section .about-info {
+  width: 60%;
+}
+.about-section .about-info h3 span {
+  letter-spacing: -10px;
+  font-weight: 100;
+}
+.about-section .about-info h3 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.about-section .about-info h1 {
+  font-size: 65px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+.about-section .about-info h2 {
+  font: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.about-section .about-info .btn-group {
+  margin: 30px 0;
+}
+.about-section .about-info .btn-group .btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid #696eff;
+  background-color: transparent;
+}
+.about-section .about-info .btn-group .btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+.about-section .about-info .btn-group .btn:first-child a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.about-section .about-info .btn-group .btn:first-child {
+  background: linear-gradient(
+    90deg,
+    rgba(16, 55, 131, 1) 0%,
+    rgba(155, 175, 217, 1) 100%
+  );
+  margin-right: 20px;
+  border: none;
+  box-shadow: 6px 3px 10px;
+}
+
+.about-section .profile {
+  width: 40%;
+}
+.about-section .profile img {
+  width: 100%;
+  height: 100%;
+}
+/* intro  */
+.introduction {
+  width: 50%;
+  padding: 50px;
+}
+.introduction p {
+  text-align: justify;
+  line-height: 20px;
+}
+.intro h1 {
+  padding: 20px 0;
+  text-align: center;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill {
+  width: 50%;
+  padding: 50px;
+}
+.skill .skill-list ul li {
+  list-style: none;
+  margin: 10px;
+  gap: 2;
+}
+.skill .skill-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.skill .skill-list ul li img {
+  height: 16.67px;
+  width: 14px;
+}
+/* project */
+.project-section h1 {
+  text-align: center;
+  color: var(--primary);
+  text-transform: uppercase;
+  margin: 30px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
+.project-section .project-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.project-section .project-rows .project-list h4 {
+  margin: 10px 5px;
+  letter-spacing: 2px;
+}
+.project-section .project-rows .project-list {
+  width: 400px;
+  height: 420px;
+  text-align: center;
+  margin: 30px 0;
+}
+.project-section .project-rows .project-list img {
+  width: 100%;
+  height: 220px;
+}
+.project-section .project-rows .project-list button {
+  margin: 20px;
+  width: 150px;
+  height: 40px;
+  font-weight: 500;
+  border-style: none;
+  background-color: black;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.project-section .project-rows .project-list button a {
+  text-decoration: none;
+  color: white;
+}
+.project-section .project-rows .project-list p {
+  font-size: 14px;
+  line-height: 22px;
+}
+.contact {
+  text-align: center;
+  margin: 50px 0;
+}
+.contact h1 {
+  color: var(--primary);
+  text-transform: uppercase;
+  margin: 20px;
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
+.contact p {
+  font-size: 15px;
+  margin: 10px;
+}
+
+.contact h3 {
+  color: var(--secondary);
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  margin: 30px;
+}
+.social-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.social-list ul li {
+  list-style: none;
+}
+
+.social-list ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 0 25px;
+}
+.social-list ul li a i {
+  font-size: 20px;
+}
+.footer {
+  text-align: center;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .navbar{
+    display: block;
+    width: 100%;
+  }
+  .navbar ul{
+    display: block;
+  }
+  .navbar ul li{
+    margin: 10px;
+  }
+  .navbar .nav-btn button{
+    width: 100%;
+  }
+  .about-section{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .about-info{
+    width: 100%;
+    text-align: center
+  }
+  .btn-group{
+    width: 100%;
+  }
+  .intro{
+    display: block;
+  }
+
+  .intro .introduction{
+    width: 100%
+  }
+  .intro .skill{
+    width: 100%
+  }
+  };
+
+
+@media only screen and (max-width: 768px) {
+ 
+}
